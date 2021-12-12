@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    {%load static %}
+    <link rel="stylesheet" href="{% static 'map.css'%}"/>
+<title>map</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+</script>
+</head>
+<body class="main">
+<div class="topnav">
+  <h1 class="text" >Navigate to your destination!!</h1>
+
+</div>
+    <div class="dropdown">
+        <select>
+            <option>Select place</option>
+            <option value="jhanjeri">jhanjeri</option>
+            <option value="mohali">mohali</option>
+            <option value="landran">Landran</option> </select>
+        </select>
+    </div>
+    <div class="mapwala">
+    <div class="jhanjeri box"><iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d54899.664415545136!2d76.60888553328026!3d30.683831619034194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0x390fe5b795735cfd%3A0xb287b4430b6720fb!2sChandigarh%20Group%20of%20Colleges%20Jhanjeri%20Mohali%2C%20State%20Highway%2012A%20Jhanjeri%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab!3m2!1d30.680868999999998!2d76.60537699999999!4m3!3m2!1d30.680011099999998!2d76.6675343!5e0!3m2!1sen!2sin!4v1638709031120!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    <div class="mohali box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.978052630901!2d76.73534231433719!3d30.69089359470057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fec1f10f386b1%3A0xd9e609fb0276d2a6!2sPunjab%20Cricket%20Association%20Cricket%20Stadium!5e0!3m2!1sen!2sin!4v1638784151467!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    <div class="landran box"><iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d54899.664415545136!2d76.60888553328026!3d30.683831619034194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0x390fe5b795735cfd%3A0xb287b4430b6720fb!2sChandigarh%20Group%20of%20Colleges%20Jhanjeri%20Mohali%2C%20State%20Highway%2012A%20Jhanjeri%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab!3m2!1d30.680868999999998!2d76.60537699999999!4m3!3m2!1d30.680011099999998!2d76.6675343!5e0!3m2!1sen!2sin!4v1638709031120!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    </div>
+</body>
+</html>

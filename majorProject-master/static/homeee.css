@@ -1,0 +1,198 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  textarea {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
+body,
+input {
+  font-family: 'Poppins', sans-serif;
+}
+
+.typewriter {
+    font-family: Courier, monospace;
+	display: inline-block;
+}
+
+.typewriter-text {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
+}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+  }
+  
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
+    background-color: #20dbc2;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+ }}
+ .mainbg{
+     background-image:"img/log.svg" ;
+
+ }
+ /* clock k liyeh */
+ .clockbody{
+    
+    left : 0px;
+    width: 375px;
+   
+    padding: 10px;
+    height: 200px;
+    margin: 30px;
+    /*background-color: #1f2222;*/
+ }
+.clock {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    /*transform: translateX(-50%) translateY(-50%);*/
+    color: #232829;
+    font-size: 60px;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 7px;
+    margin-top: 40px;
+    transform: translate(-50%, -50%);
+    color: #101516;
+    text-shadow: 0 0 20px rgb(111, 111, 122),  0 0 20px rgba(10, 175, 230, 0);
+}
+/** dropdown k liyeh **/
+
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+    border-radius: 10%;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+
+  /*form l liyeh*/
+  
+
+  /*form k liyeh */
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  button {
+    width: 100%;
+    background-color: #20dbc2;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1C2833;
+  }
+  
+  .divform {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .logout{
+  background-color:#EC7063;
+  text-color:black;
+  width:70px;
+  margin-left:20px;
+  border-radius:10px;
+  height:40px;
+  text-align:center;
+  margin-top:20px;
+  padding-top:7px;
+
+
+  }
+  .logout:hover{
+  background-color: #A93226;
+  }
+
